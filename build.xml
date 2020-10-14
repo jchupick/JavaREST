@@ -100,7 +100,7 @@
   <property name="src.dir"   value="${basedir}/src"/>  
   <property name="build.dir" value="${basedir}/build"/>  
   <property name="dist.dir"  value="${basedir}/dist"/>
-  <property name="war.name"  value="Novels"/>
+  <property name="war.name"  value="novels"/>
   
   <property name="name" value="TomcatProject"/>  
   <path id="master-classpath">  
