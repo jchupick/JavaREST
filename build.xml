@@ -87,11 +87,15 @@
 <project name="TomcatProject" basedir="." default="usage">  
 
   <!-- #### Change for your system. #### -->
+  <!--
   <property name="tomcat.home" value="/home/marty/tomcat9"/>
-
+  -->
+  
   <!-- Leave the rest as they are. -->
+  <!--
   <property name="tomcat.lib"  value="${tomcat.home}/lib"/>
   <property name="deploy.path" value="${tomcat.home}/webapps"/>
+  -->
   
   <property name="src.dir"   value="${basedir}/src"/>  
   <property name="build.dir" value="${basedir}/build"/>  
