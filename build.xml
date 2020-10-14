@@ -96,7 +96,7 @@
   <property name="src.dir"   value="${basedir}/src"/>  
   <property name="build.dir" value="${basedir}/build"/>  
   <property name="dist.dir"  value="${basedir}/dist"/>
-  <property name="war.name"  value="(Please supply a name!)"/>
+  <property name="war.name"  value="Novels"/>
   
   <property name="name" value="TomcatProject"/>  
   <path id="master-classpath">  
@@ -179,10 +179,12 @@
         <include name="**/*.*"/>  
       </fileset>  
     </war>  
-    <copy todir="${deploy.path}" preservelastmodified="true">  
+    <!--
+	<copy todir="${deploy.path}" preservelastmodified="true">  
       <fileset dir=".">  
         <include name="*.war"/>  
       </fileset>  
-    </copy>  
+    </copy>
+	-->
   </target>  
 </project> 
