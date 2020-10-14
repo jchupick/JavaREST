@@ -92,8 +92,8 @@
   -->
   
   <!-- Leave the rest as they are. -->
+  <property name="tomcat.lib"  value="../../../tomcat/lib"/>
   <!--
-  <property name="tomcat.lib"  value="${tomcat.home}/lib"/>
   <property name="deploy.path" value="${tomcat.home}/webapps"/>
   -->
   
