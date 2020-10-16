@@ -62,7 +62,7 @@ pipeline {
             steps {
                 ws("workspace/${env.JOB_NAME}/TestCode") {
                     script {
-                        sh "curl 172.18.0.4:8080/novels/"
+                        sh "curl 172.18.0.3:8080/novels/"
                     }
                 }
             }
