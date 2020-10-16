@@ -62,12 +62,6 @@ pipeline {
             steps {
                 ws("workspace/${env.JOB_NAME}/TestCode") {
                     script {
-		        sh '''
-			//for u in (curl_urls.txt)
-			//do
-			//    echo ${u}
-			//done
-			'''
                         sh "curl 172.18.0.3:8080/novels/"
                     }
                 }
