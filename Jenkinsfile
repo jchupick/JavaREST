@@ -66,7 +66,7 @@ pipeline {
 			for u in (curl_urls.txt)
 			do
 			    echo ${u}
-			done;w:
+			done
 			'''
                         sh "curl 172.18.0.3:8080/novels/"
                     }
