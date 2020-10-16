@@ -1,6 +1,6 @@
 ## Summary
 
-Demo of fully working Jenkins pipeline executing the following steps:
+*Demo of fully working Jenkins pipeline executing the following steps:
 
   1. Pull JavaREST source code from a GitHub repo
   1. Build the Java code using Ant file and Jenkins built-in Ant integration
