@@ -65,7 +65,7 @@ pipeline {
                         sh "curl 172.18.0.3:8080/novels/"
                     
 					    sh '''
-                        cat curl_urls.txt | while read line || [[ -n $line ]];
+                        cat curl_urls.txt | while read line;
                         do
                             echo "${line}"
                         done						
