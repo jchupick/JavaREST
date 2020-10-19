@@ -67,7 +67,7 @@ pipeline {
 					    sh '''
                         cat curl_urls.txt | while read line;
                         do
-                            echo "${line}"
+                            curl $line
                         done						
 						'''
 					}
