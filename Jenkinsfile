@@ -63,7 +63,14 @@ pipeline {
                 ws("workspace/${env.JOB_NAME}/TestCode") {
                     script {
                         sh "curl 172.18.0.3:8080/novels/"
-                    }
+                    
+					    sh '''
+                        for p in  $(cat curl_urls.txt)
+                        do
+                            echo "${p}"
+                        done
+						'''
+					}
                 }
             }
         }
