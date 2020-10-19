@@ -55,7 +55,7 @@ pipeline {
         }
         stage('Wait for TomCat Refresh') {
             steps {
-                sleep 30
+                sleep 10
             }
         }
         stage('UAT') {
@@ -65,10 +65,10 @@ pipeline {
                         sh "curl 172.18.0.3:8080/novels/"
                     
 					    sh '''
-                        for p in  $(cat curl_urls.txt)
+                        cat curl_urls.txt | while read line || [[ -n $line ]];
                         do
-                            echo "${p}"
-                        done
+                            echo "${line}"
+                        done						
 						'''
 					}
                 }
